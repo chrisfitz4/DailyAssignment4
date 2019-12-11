@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponderActivity">
+
+    <ImageView
+        android:id="@+id/activity_responder_user_image"
+        style="@style/UserIcon"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!--    helper views to keep the text bubbles in position-->
+    <ImageView
+        android:id="@+id/responder_activity_helper1"
+        style="@style/HelperView"
+        app:layout_constraintStart_toStartOf="@+id/responder_activity_textView1"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView1" />
+    <ImageView
+        android:id="@+id/responder_activity_helper2"
+        style="@style/HelperView"
+        app:layout_constraintEnd_toEndOf="@+id/responder_activity_textView2"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView2" />
+    <ImageView
+        android:id="@+id/responder_activity_helper3"
+        style="@style/HelperView"
+        app:layout_constraintStart_toStartOf="@+id/responder_activity_textView3"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView3" />
+    <ImageView
+        android:id="@+id/responder_activity_helper4"
+        style="@style/HelperView"
+        app:layout_constraintEnd_toEndOf="@+id/responder_activity_textView4"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView4" />
+    <ImageView
+        android:id="@+id/responder_activity_helper5"
+        style="@style/HelperView"
+        app:layout_constraintStart_toStartOf="@+id/responder_activity_textView5"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView5" />
+    <ImageView
+        android:id="@+id/responder_activity_helper6"
+        style="@style/HelperView"
+        app:layout_constraintEnd_toEndOf="@+id/responder_activity_textView6"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView6" />
+    <ImageView
+        android:id="@+id/responder_activity_helper7"
+        style="@style/HelperView"
+        app:layout_constraintStart_toStartOf="@+id/responder_activity_textView7"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_textView7" />
+
+    <!--    speech bubble parts-->
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble1"
+        style="@style/BubbleLeft"
+        app:layout_constraintEnd_toEndOf="@id/responder_activity_helper1"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper1"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble2"
+        style="@style/BubbleRight"
+        app:layout_constraintStart_toStartOf="@id/responder_activity_helper2"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper2"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble3"
+        style="@style/BubbleLeft"
+        app:layout_constraintEnd_toEndOf="@id/responder_activity_helper3"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper3"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble4"
+        style="@style/BubbleRight"
+        app:layout_constraintStart_toStartOf="@id/responder_activity_helper4"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper4"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble5"
+        style="@style/BubbleLeft"
+        app:layout_constraintEnd_toEndOf="@id/responder_activity_helper5"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper5"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble6"
+        style="@style/BubbleRight"
+        app:layout_constraintStart_toStartOf="@id/responder_activity_helper6"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper6"/>
+    <ImageView
+        android:id="@+id/responder_activity_speechBubble7"
+        style="@style/BubbleLeft"
+        app:layout_constraintEnd_toEndOf="@id/responder_activity_helper7"
+        app:layout_constraintTop_toTopOf="@id/responder_activity_helper7"/>
+
+    <!--    Text part-->
+    <TextView
+        android:id="@+id/responder_activity_textView1"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_responder_user_image" />
+    <TextView
+        android:id="@+id/responder_activity_textView3"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView2" />
+    <TextView
+        android:id="@+id/responder_activity_textView5"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView4" />
+    <TextView
+        android:id="@+id/responder_activity_textView7"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView6" />
+    <TextView
+        android:id="@+id/responder_activity_textView2"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView1" />
+    <TextView
+        android:id="@+id/responder_activity_textView4"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView3" />
+    <TextView
+        android:id="@+id/responder_activity_textView6"
+        style="@style/TextBox"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/responder_activity_textView5" />
+
+
+
+    <EditText
+        android:id="@+id/responder_activity_editText"
+        style="@style/EditTextStyle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/responder_activity_send_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/activity_responder_guideline"/>
+
+    <Button
+        android:id="@+id/responder_activity_send_button"
+        style="@style/ButtonStyle"
+        android:text="SEND"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="@id/activity_responder_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/activity_responder_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

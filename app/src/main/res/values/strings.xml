@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DailyAssignment4</string>
+    <string name="hintText">TEXT</string>
+    <string name="user1URL">https://cdn.britannica.com/s:800x450,c:crop/66/195966-138-F9E7A828/facts-turtles.jpg</string>
+    <string name="user2URL">https://www.kapama.com/rangerblog/wp-content/uploads/2018/11/IMG_4963.jpg</string>
+    <string name="test3">https://wallpapercave.com/wp/zFQO8j9.jpg</string>
+    <string name="seven_gif">https://media.giphy.com/media/Kn6P2zkn6zjEs/giphy.gif</string>
+</resources>
